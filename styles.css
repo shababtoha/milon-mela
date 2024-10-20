@@ -6,34 +6,35 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #282c34;
-    color: #ffffff;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: white;
 }
 
 .countdown-container {
-    text-align: center;
-    background-color: #444c56;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
 }
 
 h1 {
-    margin-bottom: 20px;
     font-size: 2rem;
-    color: #61dafb;
+    color: #00ccff;
+    margin-bottom: 10px;
 }
 
 #countdown {
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    margin: 20px 0;
 }
 
 .time-section {
@@ -41,13 +42,16 @@ h1 {
     font-size: 2rem;
 }
 
-.time-section p {
-    margin-top: 5px;
-    font-size: 1.2rem;
-}
-
-#days, #hours, #minutes, #seconds {
+.time-section span {
     font-size: 3rem;
     font-weight: bold;
-    color: #61dafb;
+    color: #00ccff;
+}
+
+.time-section p {
+    margin-top: 5px;
+}
+
+p {
+    font-size: 1.2rem;
 }
